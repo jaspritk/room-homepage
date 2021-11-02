@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Room homepage</title>
+</head>
+<body>
+
+  <body>
+    <header>
+      <nav>
+        <button class="hamburger active" onclick="handleMenu()">
+          <img class="btn-menu" alt="bars" aria-label="open-close" />
+        </button>
+        <label class="logo">room</label>
+        <ul class="d-none">
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main main-top">
+        <div class="hero img-fluid"></div>
+        <article>
+          <section>
+            <h2>Discover innovative ways to decorate</h2>
+            <p>
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form andnfunction
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <a href="#"
+              >Shop now
+              <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </a>
+          </section>
+          <div class="btn-group-next-back">
+            <button
+              class="btn-next-back"
+              onclick="leftClick()"
+              aria-label="left"
+            >
+              <img src="./images/icon-angle-left.svg" alt="right" />
+            </button>
+            <button class="btn-next-back" onclick="rightClick()">
+              <img
+                src="./images/icon-angle-right.svg"
+                alt="left"
+                aria-label="right"
+              />
+            </button>
+          </div>
+        </article>
+      </div>
+      <div class="main main-bot">
+        <div class="img-dark img-fluid"></div>
+        <article>
+          <section>
+            <h2>About our furniture</h2>
+            <p>
+              Our multifunctional collection blends design and function to suit
+              your individual taste. Make each room unique, or pick a cohesive
+              theme that best express your interests and what inspires you. Find
+              the furniture pieces you need, from traditional to contemporary
+              styles or anything in between. Product specialists are available
+              to help you create your dream space.
+            </p>
+          </section>
+        </article>
+        <div class="img-light img-fluid"></div>
+      </div>
+    </main>
+    <!--  
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
